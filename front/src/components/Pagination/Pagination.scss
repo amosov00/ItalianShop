@@ -1,0 +1,39 @@
+.pagination {
+  margin: auto;
+  /*временно*/
+  display: flex;
+  justify-content: center;
+
+  &__arrow-right {
+    margin-left: 40px;
+  }
+
+  &__arrow-left {
+    margin-right: 40px;
+  }
+
+  &__button:hover {
+    border-bottom: 2px solid #2b2a2a;
+  }
+
+  &__button.active {
+    color: white;
+    border-bottom: 2px solid #2b2a2a;
+    border-top: 2px solid #2b2a2a;
+    background-color: #2b2a2a;
+  }
+
+  button {
+    border-top: 2px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+  }
+}

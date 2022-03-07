@@ -1,0 +1,96 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  padding-top: 50px;
+  margin: auto;
+
+  @media (max-width: 850px) {
+    display: block;
+  }
+
+
+  &__info_name {
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__info_size {
+    letter-spacing: 1px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__info_brand {
+    cursor: pointer;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__special_price {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 26px 0;
+  }
+
+  .last-price {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #a5a5a5;
+    text-decoration: line-through;
+  }
+  &__info {
+    max-width: 756px;
+    width: 100%;
+    margin-left: 50px;
+    @media (max-width: 850px) {
+      margin: auto;
+    }
+
+  }
+  &__info_price {
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 65px;
+  }
+
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__info_description {
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 40px 0;
+    margin: 30px 0;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+
+    a {
+      color: -webkit-link;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  &__swiper {
+    max-width: 500px;
+    overflow: hidden !important;
+  }
+  &__swiper-item {
+    width: 100%;
+  }
+}

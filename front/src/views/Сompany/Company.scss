@@ -1,0 +1,25 @@
+.company {
+  .company__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .company__item {
+      margin: 0 1px 10px 1px;
+      cursor: pointer;
+      img {
+        width: 272px;
+        height: 272px;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid black;
+        object-fit: cover;
+      }
+
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+    }
+  }
+}

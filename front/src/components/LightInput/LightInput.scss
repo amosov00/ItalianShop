@@ -1,0 +1,57 @@
+
+.light-input--normal {
+  border-bottom: 1px solid white;
+}
+
+.light-input--wrong {
+  border-bottom: 1px solid red;
+}
+
+
+.light-input {
+  transition: 0.30s;
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+  color: white;
+
+  input {
+    color: white;
+  }
+
+
+  &__placeholder {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    margin: 0 !important;
+    text-transform: none !important;
+    font-weight: normal !important;
+    line-height: 1.15;
+    transition: 0.20s;
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 100;
+  }
+
+  input:focus + &__placeholder {
+    top: 0;
+    transform: translate(0, -100%);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

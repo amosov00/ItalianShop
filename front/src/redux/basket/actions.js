@@ -1,0 +1,2 @@
+export const SET_LIKE_COUNT = 'SET_LIKE_COUNT'
+export const SET_CART_COUNT = 'SET_CART_COUNT'

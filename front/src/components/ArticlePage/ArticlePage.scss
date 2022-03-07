@@ -1,0 +1,49 @@
+.article {
+
+  &__category {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    button {
+      text-transform: uppercase;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin: 60px 0;
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+  &__body {
+    max-width: 660px;
+    margin: auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  &__date {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  &__photos {
+    max-width: 660px;
+    margin: auto;
+  }
+
+
+  img.article__photo {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+
+  .article__swipe-wrapper {
+    margin: 70px auto;
+  }
+}

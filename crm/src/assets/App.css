@@ -1,0 +1,11 @@
+.card-style {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

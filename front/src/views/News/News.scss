@@ -1,0 +1,26 @@
+.news {
+  .wrapper {
+    max-width: 1270px;
+    margin: auto;
+  }
+  padding-bottom: 50px;
+  margin: 0 7%;
+  &__section {
+    @media (max-width: 768px) {
+      display: block;
+      .article-card:first-child {
+        margin-bottom: 50px;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .article-card {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      width: 48%;
+    }
+  }
+}

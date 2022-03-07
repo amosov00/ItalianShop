@@ -1,0 +1,44 @@
+@import "src/components/App";
+.sidebar {
+  width: 320px;
+  height: 100vh;
+  background-color: $base-color;
+  color: white;
+  position: absolute;
+  z-index: 999;
+
+  &__close-section {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    button {
+      background-color: transparent;
+      cursor: pointer;
+      height: 60px;
+      border: none;
+      width: 56px;
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+  &__menu-list {
+    list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+    li {
+      margin: 20px 0;
+      a.active {
+        font-weight: 700;
+      }
+    }
+    li:first-child {
+      margin-top: 0;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

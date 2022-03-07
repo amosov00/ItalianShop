@@ -1,0 +1,93 @@
+//$base-color: #1A1A1A;
+//$base-color: #052666;
+$base-color: #03163b;
+
+
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+body {
+ font: 0.9em 'Lora', 'Open Sans', sans-serif;
+ -webkit-tap-highlight-color: transparent;
+}
+
+
+a {
+ text-decoration: none;
+ color: white;
+}
+
+h1 {
+ font-size: 35px;
+ font-weight: 400;
+ padding: 0;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 60px;
+}
+
+.overflow-hidden {
+ overflow: hidden;
+}
+
+.m-auto {
+ margin: auto;
+}
+
+.opacity-3 {
+ opacity: 0.3;
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+ border-color: #2c2c2c !important;
+ box-shadow: 0 0 0 5px #727272 !important;
+}
+
+h1.title {
+
+ font-size: 35px;
+ font-weight: 400;
+ padding: 30px 0 0;
+ text-align: center;
+}
+
+#root {
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+}
+
+.swiper-container {
+ overflow: visible !important;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.my-swipe-wrapper {
+ overflow-x: clip;
+ max-width: 1200px;
+ margin: auto;
+ padding: 0 40px;
+ .swiper-button-prev {
+  left: -33px;
+ }
+ .swiper-button-next {
+  right: -33px;
+ }
+}
+
+.blood {
+ font-weight: bold;
+}
+
+.lg-sub-html {
+ display: none !important;
+}
+
+
+
+

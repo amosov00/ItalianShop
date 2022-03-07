@@ -1,0 +1,189 @@
+@import "src/components/App";
+
+
+.menu {
+  background-color: $base-color;
+  color: white;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    max-width: 1450px;
+    margin: auto;
+    position: relative;
+  }
+
+
+
+  &__logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 50px;
+    }
+    padding: 0 50px;
+
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  &__burger-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    min-width: 56px;
+    cursor: pointer;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__search-btn {
+   button {
+     min-width: 56px;
+     border-left: 2px solid #8b8b8b;
+     background-color: transparent;
+     cursor: pointer;
+     border-top: none;
+     border-bottom: none;
+     border-right: none;
+
+     @media (max-width: 1024px) {
+       border-left: none;
+     }
+     img {
+       margin: auto;
+       display: block;
+     }
+   }
+  }
+
+
+  &__input--show {
+    transform: scale(1);
+  }
+
+  &__input--hide {
+    transform: scale(0);
+  }
+
+  &__input {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    height: 60px;
+    top: 60px;
+    width: 1024px;
+    border: 1px solid #c2c2c2;
+    display: flex;
+    transition: all 0.5s;
+    transform-origin: top right;
+    input {
+      width: 100%;
+      padding: 0 15px;
+      border: none;
+      background-color: white;
+    }
+    input:focus {
+      outline: none;
+    }
+    button {
+      background: white;
+      border: none;
+      cursor: pointer;
+      min-width: 56px;
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width: 1440px) {
+      width: 70vw;
+    }
+    @media (max-width: 1280px) {
+      width: 68vw;
+    }
+    @media (max-width: 1180px) {
+      width: 65vw;
+    }
+    @media (max-width: 1080px) {
+      width: 63vw;
+    }
+    @media (max-width: 1024px) {
+      width: 90vw;
+    }
+    @media (max-width: 560px) {
+      width: 100vw;
+    }
+  }
+
+  &__button-wrapper {
+    min-width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    div {
+      position: absolute;
+      background-color: white;
+      color: black;
+      top: 12px;
+      right: 8px;
+      border-radius: 9999px;
+      width: 16px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__like, &__basket {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  &__items {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 1040px;
+    justify-content: center;
+    font-size: 1vw;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    @media (min-width: 1440px) {
+      font-size: 14px;
+    }
+    li {
+      padding: 0 16px;
+      display: inline-block;
+
+      a {
+        display:inline-block;
+      }
+      a::before {
+        display: block;
+        content: attr(title);
+        font-weight: 700;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+
+      a.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+
+}
